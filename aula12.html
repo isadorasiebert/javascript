@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>CFB Curso JavaScript</title>
+    <meta charset="utf-8" />
+
+    <script>
+      var pos, msg, pontos;
+
+      pos = 3;
+
+      switch (pos) {
+        case 1:
+          msg = "Primeiro lugar";
+          break;
+
+        case 2:
+          msg = "Segundo lugar";
+          break;
+
+        default:
+          msg = "Default";
+      }
+
+      switch (pos) {
+        case 1:
+        case 2:
+          msg += pos;
+          break;
+        default:
+          msg += "<br>Second default";
+      }
+
+      document.write(msg);
+    </script>
+  </head>
+  <body></body>
+</html>
