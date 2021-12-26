@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>CFB Curso JavaScript</title>
+    <meta charset="utf-8" />
+
+    <script>
+      var nota = 97;
+      var res;
+      // super aprovado:    nota > 95
+      // aprovado:          nota >= 60
+      // recuperacao:       nota >= 40 && nota < 60
+      // reprovado:         nota < 40
+      // super reprovado:   nota < 20
+
+      // nested ifs
+
+      if (nota >= 60) {
+        if (nota > 95) {
+          res = "Super aprovado";
+        } else {
+          res = "Aprovado";
+        }
+      } else if (nota >= 40) {
+        res = "Recuperação";
+      } else {
+        if (nota < 20) {
+          res = "Super reprovado";
+        } else {
+          res = "Reprovado";
+        }
+      }
+
+      document.write(res);
+    </script>
+  </head>
+  <body></body>
+</html>
