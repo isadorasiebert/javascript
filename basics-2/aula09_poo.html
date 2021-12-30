@@ -4,5 +4,33 @@
     <meta charset="utf-8" />
     <title>POO</title>
   </head>
-  <body></body>
+  <body>
+    <input type="button" id="button1">
+    <input type="button" id="button2">
+    
+    <input type="text" id="form1">
+
+    <script>
+      var myButton = document.getElementById("button1");
+      var myButton2 = document.getElementById("button2");
+
+      var myForm = document.getElementById("form1");
+
+      myButton.style.width = "100px";
+      myButton.style.height = "100px";
+      // myButton.style.backgroundColor = "blue";
+
+      myButton2.style.width = "100px";
+      myButton2.style.height = "100px";
+
+      myButton2.focus();
+
+      myForm.style.background = "pink";
+      myForm.value = "Text here";
+
+      document.write("<br>" + myButton.ATTRIBUTE_NODE + "<br>");
+      document.write(myButton.nodeType + "<br>");
+
+    </script>
+  </body>
 </html>
