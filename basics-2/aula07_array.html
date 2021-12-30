@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Arrays</title>
+        <script>
+            // var dinArray = [];
+            var articulos=["Zapatillas","Camisetas","Pantálon", "Calcetines"];
+        </script>
+    </head>
+    <body>
+        <h1>Manejando Arrays</h1>
+        <script>
+            document.write(articulos);
+            document.write("<br> El primer articulo es <strong>" + articulos[0] + "</strong><br>");
+            // document.write(articulos.length);
+            document.write("El último elemento es <strong>"+articulos[articulos.length -1]+"</strong><br>");
+
+            // UNSHIFT: insert element at beginning of array
+            articulos.unshift("Balón");
+
+            document.write("<br>Unshift Bálon = " + articulos + "<br>");
+            
+            // PUSH: insert element at end of array
+            articulos.push("Raqueta");
+            document.write("<br>Push Raqueta = " + articulos + "<br>");
+
+            articulos.push(prompt("Introduce el artículo: ", "Artículo"));
+            document.write("<br> Push your article = " + articulos + "</br>");
+
+            // SHIFT: eliminate the first element
+            articulos.shift();
+
+            document.write("<br> Shift = " + articulos  + "<br>");
+
+            // POP: eliminate the last element
+            articulos.pop(); 
+            document.write("<br>Pop = " + articulos)
+        </script>
+    </body>
+</html>
